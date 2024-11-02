@@ -1,0 +1,24 @@
+<!-- <app-table [labels]="labels" [dataSet]="catering"></app-table> -->
+<nz-table #basicTable [nzData]="catering">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>{{ data.name }}</td>
+      <td>{{ data.price }}</td>
+      <!-- <td>{{ data.address }}</td> -->
+      <td>
+        <a>Add</a>
+        <nz-divider nzType="vertical"></nz-divider>
+        <a>Edit</a>
+        <nz-divider nzType="vertical"></nz-divider>
+        <a>Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
