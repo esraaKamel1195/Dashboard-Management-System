@@ -5,9 +5,6 @@ import { NgZorroAntdModule } from './ng-zorro-antd.module';
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    NgZorroAntdModule
-  ]
+  imports: [CommonModule, NgZorroAntdModule],
 })
-export class AppModule { }
+export class AppModule {}

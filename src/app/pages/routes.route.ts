@@ -21,5 +21,5 @@ export const PagesRoutes: Routes = [
   { path: 'room-reserve', component: RoomRegistersComponent },
   { path: 'plans', component: PlansComponent },
   { path: 'faculties', component: FacultiesComponent },
-  // { path: '', component: }
+  { path: '**', redirectTo: 'registers', pathMatch: 'full' },
 ];
