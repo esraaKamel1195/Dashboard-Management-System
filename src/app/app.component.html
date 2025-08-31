@@ -13,42 +13,42 @@
     <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
       <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
         <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a href="pages">Welcome</a>
+          <li nz-menu-item nzMatchRouter routerLink="/pages" routerLinkActive="active">
+            <a>Welcome</a>
           </li>
-          <li nz-menu-item nzMatchRouter >
-            <a href="pages/registers">Registers</a>
+          <li nz-menu-item nzMatchRouter routerLink="/pages/registers" routerLinkActive="active">
+            <a>Registers</a>
           </li>
-          <li nz-menu-item nzMatchRouter>
-            <a href="pages/client-catering">Catering Calculate</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a href="pages/room-reserve">Rooms Reservation</a>
+          <li nz-menu-item nzMatchRouter routerLink="/pages/client-catering" routerLinkActive="active">
+            <a>Catering Calculate</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a href="pages/plans">Plans</a>
+            <a routerLink="pages/room-reserve" routerLinkActive="active">Rooms Reservation</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a href="pages/rooms">Rooms</a>
+            <a routerLink="pages/plans" routerLinkActive="active">Plans</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a href="pages/catering">Catering Products</a>
+            <a routerLink="pages/rooms" routerLinkActive="active">Rooms</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a href="pages/clients">Clients</a>
+            <a routerLink="pages/catering" routerLinkActive="active">Catering Products</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a href="pages/faculties">Faculties</a>
+            <a routerLink="pages/clients" routerLinkActive="active">Clients</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a href="/pages/users">Users</a>
+            <a routerLink="pages/faculties" routerLinkActive="active">Faculties</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink='pages/users' routerLinkActive="active">Users</a>
           </li>
         </ul>
       </li>
       <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
         <ul>
           <li nz-menu-item>
-            <a href="">Setting</a>
+            <a routerLink="/" routerLinkActive="active">Setting</a>
           </li>
         </ul>
       </li>

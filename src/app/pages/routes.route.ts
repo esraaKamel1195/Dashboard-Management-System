@@ -11,7 +11,6 @@ import { PlansComponent } from './plans/plans.component';
 import { FacultiesComponent } from './faculties/faculties.component';
 
 export const PagesRoutes: Routes = [
-  { path: '', component: WelcomeComponent },
   { path: 'registers', component: RegistersComponent },
   { path: 'users', component: UsersComponent },
   { path: 'clients', component: ClientsComponent },
@@ -21,5 +20,6 @@ export const PagesRoutes: Routes = [
   { path: 'room-reserve', component: RoomRegistersComponent },
   { path: 'plans', component: PlansComponent },
   { path: 'faculties', component: FacultiesComponent },
+  { path: 'dashboard', component: WelcomeComponent },
   { path: '**', redirectTo: 'registers', pathMatch: 'full' },
 ];
